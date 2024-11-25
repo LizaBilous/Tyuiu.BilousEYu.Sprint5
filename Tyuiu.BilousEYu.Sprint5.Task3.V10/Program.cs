@@ -11,7 +11,7 @@ namespace Tyuiu.BilousEYu.Sprint5.Task3.V10
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема:                                                                   *");
             Console.WriteLine("* Задание #3                                                              *");
-            Console.WriteLine("* Вариант #17                                                             *");
+            Console.WriteLine("* Вариант #10                                                             *");
             Console.WriteLine("* Выполнила: Билоус Елизавета Юрьевна | ИСТНб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
