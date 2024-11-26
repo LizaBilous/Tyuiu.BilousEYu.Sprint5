@@ -12,7 +12,9 @@ namespace Tyuiu.BilousEYu.Sprint5.Task5.V3.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (line.Contains(",") == false)
+                    string lineReplace = line.Replace('.', ',');
+                    string[] lineArray = lineReplace.Split(' ');
+
                     {
                         res = res + Convert.ToDouble(line);
                     }
