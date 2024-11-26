@@ -1,4 +1,7 @@
-﻿using System.IO;
+﻿using System.Globalization;
+using System.IO;
+using System.Reflection.PortableExecutable;
+using System.Runtime.Serialization;
 using tyuiu.cources.programming.interfaces.Sprint5;
 namespace Tyuiu.BilousEYu.Sprint5.Task5.V3.Lib
 {
@@ -6,21 +9,24 @@ namespace Tyuiu.BilousEYu.Sprint5.Task5.V3.Lib
     {
         public double LoadFromDataFile(string path)
         {
+            IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };
             double res = 0;
+
             using (StreamReader reader = new StreamReader(path))
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                string line = reader.ReadLine();
+                if (line != null)
                 {
-                    string lineReplace = line.Replace('.', ',');
-                    string[] lineArray = lineReplace.Split(' ');
-
+                    foreach (string strNum in line.Split(' '))
                     {
-                        res = res + Convert.ToDouble(line);
+                        double num = double.Parse(strNum, formatter);
+                        if (num == Math.Round(num))
+                            res += num;
                     }
                 }
-                return Math.Round(res, 3);
             }
+
+            return res;
         }
     }
 }

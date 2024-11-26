@@ -8,7 +8,7 @@ namespace Tyuiu.BilousEYu.Sprint5.Task5.V3.Test
         public void CheckedExistsFile()
         {
 
-            string path = @"C:\Users\User\source\repos\Tyuiu.BilousEYu.Sprint5\DataSprint5\InPutDataFileTask5V3.txt";
+            string path = @"C:\Users\Елизавета\source\repos\Tyuiu.BilousEYu.Sprint5\DataSprint5\InPutDataFileTask5V3.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
