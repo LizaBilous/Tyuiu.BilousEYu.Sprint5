@@ -11,13 +11,12 @@ namespace Tyuiu.BilousEYu.Sprint5.Task6.V21.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    for (int i = 0; i < line.Length - 1; i++)
+                    for (int i = 0; i < line.Length; i++)
                     {
-                        line = line.Replace('!', '#');
-                        line = line.Replace(',', '#');
-                        line = line.Replace('?', '#');
-                        line = line.Replace('-', '#');
-                        line = line.Replace('.', '#');
+                        if (line[i] == 'т' && line[i + 1] == 'т')
+                        {
+                            count++;
+                        }
                     }
                 }
             }
