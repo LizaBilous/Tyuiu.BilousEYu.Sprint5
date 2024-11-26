@@ -12,7 +12,7 @@ namespace Tyuiu.BilousEYu.Sprint5.Task6.V21
             Console.WriteLine("* Тема: Обработка текстовых файлов                                        *");
             Console.WriteLine("* Задание #6                                                              *");
             Console.WriteLine("* Вариант #21                                                             *");
-            Console.WriteLine("* Выполнила: Билоус Елизавета Юрьевна | ПКТб-23-1                         *");
+            Console.WriteLine("* Выполнила: Билоус Елизавета Юрьевна | ИСТНб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дан файл (файл взять из архива согласно вашему варианту. Создать папку  *");
