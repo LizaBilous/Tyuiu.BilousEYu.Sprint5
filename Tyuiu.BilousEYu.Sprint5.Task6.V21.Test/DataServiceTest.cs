@@ -11,7 +11,7 @@ namespace Tyuiu.BilousEYu.Sprint5.Task6.V21.Test
             string path = @"C:\Users\Елизавета\source\repos\Tyuiu.BilousEYu.Sprint5\DataSprint5\InPutDataFileTask6V21.txt";
 
             var res = ds.LoadFromDataFile(path);
-            int wait = 3;
+            int wait = 2;
 
             Assert.AreEqual(wait, res);
         }
